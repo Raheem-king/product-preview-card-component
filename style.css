@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: hsl(30, 38%, 92%);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+	height: 100vh;
+}
+
+.perfume{
+	text-transform: uppercase;
+	letter-spacing: 4.8px;
+	
+}
+.image{
+	height: 70%;
+	width: 25%;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.content{
+	height: 70%;
+	width: 25%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: hsl(0, 0%, 100%);
+}
+
+.product_name{
+	font-family: fraunces;
+	
+}
+
+p{
+	font-size: 14px;
+	color: hsl(228, 12%, 48%);
+}
+
+p , .button{
+	font-family: Montserrat;
+	
+}
+
+.content p{
+	line-height: 1.5;
+}
+
+.price{
+	display: flex;
+	flex-flow: row wrap;
+	color: hsl(158, 36%, 37%);
+	align-items: center;
+	font-family: fraunces;
+	max-width: 100%;
+}
+.discount{
+	font-size: small;
+	color: hsl(228, 12%, 48%);
+	text-decoration: line-through;
+}
+
+.button{
+	border-radius: 5px;
+	padding: 10px;
+	background-color: hsl(158, 36%, 37%);
+	color: hsl(0, 0%, 100%);
+	border-color: hsl(158, 36%, 37%);;
+}
+
+@media(max-width: 780px){
+	.flex-container{
+	flex-flow: column wrap;
+}
+	
+	.image{
+	background: url("images/image-product-mobile.jpg");
+	height: 30%;
+	width: 90%;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 5px;
+}
+
+	.content{
+	height: 60%;
+	width: 90%;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.button{
+	
+}
+
+}
