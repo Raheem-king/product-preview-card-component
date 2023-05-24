@@ -1,2 +1,2 @@
 # product-preview-card-component
- priduct review card sulutuon using flexbox
+ product review card solution using flexbox
